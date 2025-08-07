@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cornelio's House Cleaning - Professional Cleaning Services Blanchard</title>
+    <link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin1.webp">
+    <link rel="shortcut icon" type="image/webp" href="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin1.webp">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2d5aa0, #4a90e2);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .company-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.9);
+            font-weight: normal;
+        }
+
+        .logo-image {
+            width: 150px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            padding: 5px;
+        }
+
+        .contact-info {
+            text-align: right;
+        }
+
+        .phone {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ffd700;
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 25px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 30px;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,215,0,0.3);
+        }
+
+        .phone:hover {
+            background: rgba(255,215,0,0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+        }
+
+        .hours {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(45,90,160,0.9), rgba(74,144,226,0.9)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect fill="%23e8f4fd" width="1000" height="600"/><circle fill="%23b3d9ff" cx="200" cy="150" r="80"/><circle fill="%23b3d9ff" cx="500" cy="200" r="60"/><circle fill="%23b3d9ff" cx="800" cy="120" r="70"/><rect fill="%23cce7ff" x="100" y="400" width="800" height="150" rx="20"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,215,0,0.1), rgba(45,90,160,0.1));
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+            color: #fff5cc;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #2d5aa0;
+            box-shadow: 0 4px 15px rgba(255,215,0,0.4);
+            font-weight: bold;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid #ffd700;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255,215,0,0.4);
+        }
+
+        .btn-secondary:hover {
+            background: #ffd700;
+            color: #2d5aa0;
+            font-weight: bold;
+        }
+
+        .services {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #f8fafc, #e8f4fd);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            color: #2d5aa0;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            border-radius: 2px;
+        }
+
+        .newsletter .section-title,
+        .reservation-section .section-title {
+            color: white;
+        }
+
+        .newsletter .section-title::after,
+        .reservation-section .section-title::after {
+            background: linear-gradient(45deg, #fff5cc, #ffd700);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 4px solid #ffd700;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(45,90,160,0.2);
+            border-top: 4px solid #2d5aa0;
+        }
+
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .service-card h3 {
+            color: #2d5aa0;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .reservation-section {
+            background: linear-gradient(135deg, #2d5aa0, #4a90e2);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .reservation-form {
+            background: rgba(255,255,255,0.15);
+            padding: 50px;
+            border-radius: 25px;
+            max-width: 650px;
+            margin: 0 auto;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.9);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            background: white;
+            border: 2px solid #ffd700;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+        }
+
+        .gallery {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-item {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            border: 3px solid transparent;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 15px 40px rgba(45,90,160,0.2);
+            border: 3px solid #ffd700;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .reviews {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #f8fafc, #e8f4fd);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 30px;
+        }
+
+        .review-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #ffd700;
+            border-bottom: 2px solid #2d5aa0;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(45,90,160,0.2);
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .reviewer {
+            font-weight: bold;
+            color: #2d5aa0;
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+
+        .review-card p {
+            color: #555;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .show-more {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .newsletter {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #2d5aa0, #4a90e2);
+            color: white;
+        }
+
+        .newsletter-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .newsletter-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #fff5cc;
+        }
+
+        .newsletter-text p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        .newsletter-form-container {
+            background: rgba(255,255,255,0.15);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .newsletter-form .form-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 0;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 18px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .newsletter-input::placeholder {
+            color: #999;
+        }
+
+        .newsletter-btn {
+            padding: 18px 35px;
+            white-space: nowrap;
+            border-radius: 50px;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #2d5aa0;
+            font-weight: bold;
+        }
+
+        .location {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .location-info h3 {
+            color: #2d5aa0;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        .location-info p {
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .location-info strong {
+            color: #2d5aa0;
+        }
+
+        .location-info a {
+            color: #2d5aa0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .location-info a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(45,90,160,0.15);
+            border: 3px solid #ffd700;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #4a90e2, #2d5aa0);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .directions-btn {
+            background: #ffd700 !important;
+            color: #2d5aa0 !important;
+            border: 3px solid #2d5aa0 !important;
+            font-weight: bold !important;
+            text-shadow: none !important;
+            box-shadow: 0 4px 15px rgba(45,90,160,0.3) !important;
+        }
+
+        .directions-btn:hover {
+            background: #2d5aa0 !important;
+            color: #ffd700 !important;
+            border: 3px solid #ffd700 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255,215,0,0.4) !important;
+        }
+
+        .square-payment {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .square-payment h4 {
+            color: #fff5cc;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #ffed4e, #fffc82) !important;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255,215,0,0.4);
+        }
+
+        .reviews-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .reviews-link a {
+            color: #2d5aa0;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: 2px solid #2d5aa0;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .reviews-link a:hover {
+            background: #2d5aa0;
+            color: white;
+        }
+
+       /* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .header-content {
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+            .contact-info {
+                text-align: center;
+                margin-top: 1rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .phone {
+                display: block;
+                text-align: center;
+                margin: 0 auto 0.5rem auto;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .newsletter-form .form-group {
+                flex-direction: column;
+            }
+
+            .newsletter-btn {
+                width: 100%;
+            }
+
+            .location-content {
+                grid-template-columns: 1fr;
+            }
+
+            .location-content .location-info {
+                text-align: center;
+            }
+
+            .location-content .location-info h3 {
+                text-align: center;
+            }
+
+            .location-content .location-info div {
+                text-align: center;
+            }
+
+            .phone {
+                font-size: 1.2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .logo-image {
+                width: 100px;
+                height: 80px;
+            }
+
+            .company-name {
+                font-size: 1.3rem;
+            }
+
+            .tagline {
+                font-size: 0.75rem;
+            }
+
+            .logo {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin1.webp" alt="Cornelio's House Cleaning Logo" class="logo-image" onerror="this.style.display='none'">
+                <div class="logo-text">
+                    <div class="company-name">Cornelio's House Cleaning</div>
+                    <div class="tagline">Professional Cleaning Services Since 2010</div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a href="tel:14053378099" class="phone">📞 (405) 337-8099</a>
+                <div class="hours">
+                    Mon-Thu: 8:30 AM - 5 PM<br>
+                    Fri: 8:30 AM - 5 PM • Sat: 10 AM - 2 PM • Sun: Closed
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Blanchard's Trusted Cleaning Experts</h1>
+            <p>Professional house cleaning services, deep cleaning, move-out cleaning, and complete home care. Honest work, fair prices, and exceptional service you can depend on with 15 years of experience.</p>
+            <div class="cta-buttons">
+                <a href="#reservation" class="btn btn-primary">Schedule Cleaning</a>
+                <a href="tel:14053378099" class="btn btn-secondary">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Standard House Cleaning</h3>
+                    <p>Regular home cleaning services including dusting, vacuuming, mopping, and sanitizing all living areas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Deep Cleaning</h3>
+                    <p>Comprehensive deep cleaning service including baseboards, windows, cabinets, and detailed attention to every corner.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Move-Out Cleaning</h3>
+                    <p>Professional move-out cleaning to help you get your deposit back. We clean every inch for your final inspection.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Post-Construction Cleanup</h3>
+                    <p>Specialized cleaning after construction or renovation projects. We handle dust, debris, and detailed cleanup.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <h3>Kitchen & Appliance Cleaning</h3>
+                    <p>Detailed kitchen cleaning including inside ovens, refrigerators, cabinets, and all appliance surfaces.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪟</div>
+                    <h3>Window & Baseboard Cleaning</h3>
+                    <p>Interior window cleaning and detailed baseboard cleaning to make your home sparkle from top to bottom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">Schedule Your Cleaning</h2>
+            <div class="reservation-form">
+                <p style="margin-bottom: 30px;">Book your house cleaning service appointment. We'll confirm your booking and provide an estimate.</p>
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="property-type">Property Type</label>
+                        <select id="property-type" name="property-type" required>
+                            <option value="">Select property type</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="house">House</option>
+                            <option value="condo">Condo/Townhouse</option>
+                            <option value="office">Office</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bedrooms">Bedrooms</label>
+                        <select id="bedrooms" name="bedrooms" required>
+                            <option value="">Number of bedrooms</option>
+                            <option value="1">1 Bedroom</option>
+                            <option value="2">2 Bedrooms</option>
+                            <option value="3">3 Bedrooms</option>
+                            <option value="4">4 Bedrooms</option>
+                            <option value="5+">5+ Bedrooms</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bathrooms">Bathrooms</label>
+                        <select id="bathrooms" name="bathrooms" required>
+                            <option value="">Number of bathrooms</option>
+                            <option value="1">1 Bathroom</option>
+                            <option value="2">2 Bathrooms</option>
+                            <option value="3">3 Bathrooms</option>
+                            <option value="4">4 Bathrooms</option>
+                            <option value="5+">5+ Bathrooms</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="standard-cleaning">Standard Cleaning</option>
+                            <option value="deep-cleaning">Deep Cleaning</option>
+                            <option value="move-out-cleaning">Move-Out Cleaning</option>
+                            <option value="post-construction">Post-Construction Cleanup</option>
+                            <option value="recurring">Recurring Service</option>
+                            <option value="other">Other (describe below)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency</label>
+                        <select id="frequency" name="frequency" required>
+                            <option value="">Select frequency</option>
+                            <option value="one-time">One Time</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="bi-weekly">Every 2 Weeks</option>
+                            <option value="monthly">Monthly</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Date</label>
+                        <input type="date" id="preferred-date" name="preferred-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred-time">Preferred Time</label>
+                        <select id="preferred-time" name="preferred-time" required>
+                            <option value="">Select time</option>
+                            <option value="morning">Morning (8:30-11:30 AM)</option>
+                            <option value="midday">Midday (11:30 AM-2:30 PM)</option>
+                            <option value="afternoon">Afternoon (2:30-5:00 PM)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pets">Pets in Home?</label>
+                        <select id="pets" name="pets">
+                            <option value="no">No pets</option>
+                            <option value="yes">Yes, pets in home</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any special instructions, areas of focus, or additional services needed..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Schedule Cleaning</button>
+                </form>
+                
+                <div class="square-payment">
+                    <h4>Secure Payment Options Available</h4>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">We accept all major credit cards and digital payments for your convenience.</p>
+                    <!-- Replace YOUR_LOCATION_ID with actual Square location ID -->
+                    <div id="square-payment-form" data-location-id="YOUR_LOCATION_ID" style="display: none;"></div>
+                </div>
+                
+                <p style="margin-top: 25px; font-size: 0.9rem; opacity: 0.8;">
+                    Prefer to call? <a href="tel:14053378099" style="color: #fff5cc;">Call (405) 337-8099</a> to speak with us directly.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work & Results</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin1.webp" alt="Professional House Cleaning" onerror="this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin2.webp" alt="Deep Cleaning Service" onerror="this.src='https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin3.webp" alt="Kitchen Cleaning" onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin4.webp" alt="Bathroom Cleaning" onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin5.webp" alt="Living Room Cleaning" onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin6.webp" alt="Bedroom Cleaning" onerror="this.src='https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <div class="gallery-item hidden" id="gallery7">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin7.webp" alt="Move-Out Cleaning" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <div class="gallery-item hidden" id="gallery8">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin8.webp" alt="Post-Construction Cleanup" onerror="this.src='https://images.unsplash.com/photo-1609521263047-f8f205293f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <div class="gallery-item hidden" id="gallery9">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin9.webp" alt="Window Cleaning" onerror="this.src='https://images.unsplash.com/photo-1615906655593-ad0386982a0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+                <div class="gallery-item hidden" id="gallery10">
+                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin10.webp" alt="Professional Team" onerror="this.src='https://images.unsplash.com/photo-1632823469621-700faba35a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                </div>
+            </div>
+            <div class="show-more">
+                <button class="btn btn-primary" onclick="showMoreGallery()">Show More Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>It was so nice to come back to a very clean home. Highly recommend!</p>
+                    <div class="reviewer">- Ashley H.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Excellent work and price</p>
+                    <div class="reviewer">- Cindy P.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>They did good work.</p>
+                    <div class="reviewer">- Jacqueline B.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Show up, and they work without me telling them what to do</p>
+                    <div class="reviewer">- Cynthia C.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Work was pretty good. I will use them again</p>
+                    <div class="reviewer">- Peggy S.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Great service, great value and fast!</p>
+                    <div class="reviewer">- Matt T.</div>
+                </div>
+
+                <!-- Hidden reviews -->
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>I lost my old house cleaner due to her illness. She did a great job. But Bianca and Cornelios did a great job at a very reasonable price for our 3/2 house in Moore. Her communication was prompt and texted me the day before our appointment. Two ladies showed up on time to clean. They were friendly, trustworthy and energetic. They did a great job. The house was sparkling and smelled so good. Floors, bathroom, blinds, kitchen - everything looked great. I will be using them on a regular basis.</p>
+                    <div class="reviewer">- Pamela C.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>The work quality was far beyond anything we were expecting. Our house has never looked so good. We will certainly use them on a regular basis.</p>
+                    <div class="reviewer">- Doug P.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>These ladies were great!</p>
+                    <div class="reviewer">- Tatianya F.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>They did an amazing job. I was very impressed and want them back</p>
+                    <div class="reviewer">- Shannon T.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>They did a great job with my deep clean with a fair price, they even went above and beyond on the cute little bows and I thoroughly enjoyed not having to babysit as I've had to in the past with other services. Will definitely be a repeat in the future.</p>
+                    <div class="reviewer">- Kyle F.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>They were amazing!! They cleaned my apartment so well I was able to get my deposit back!! I would 10/10 recommend.</p>
+                    <div class="reviewer">- Alex m.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐</div>
+                    <p>I hired this company for a deep clean and got a surface clean at best. They sent out a couple of ladies to clean what they missed the next day. One girl was helpful the other one cursed in Spanish the while time she was there. Probably will not use them again.</p>
+                    <div class="reviewer">- Mary M.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Hello, we wanted to share with you that your team that cleaned our home today… did an absolutely amazing job! My wife can't say enough good things about them as she walks around the house… we are grateful the special touches! Thank you. We will be signing up for regular service after this experience!</p>
+                    <div class="reviewer">- Mark B.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐</div>
+                    <p>I had an appointment with them, they didn't show up at the time they said so had to reschedule. Then the next appointment I had to cancel because I was up sick all night. I asked to reschedule and they never responded back to me. Life happens sometimes and you shouldn't get upset with the customers</p>
+                    <div class="reviewer">- Lisa S.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>I am more than pleased with the work from these ladies. I've already rescheduled for them to come back. You cannot beat the price and they do an outstanding job. My house is huge and there's a lot of nook and cranny's to it and they got my house pretty much spotless within four hours. Thank you for doing such an amazing job.</p>
+                    <div class="reviewer">- Ashlea T.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>This team is so great! We are lucky to have found them!</p>
+                    <div class="reviewer">- Megan F.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p>A 3 person team showed up, did a great job, and were finished in 2 hours. I have hired them for bimonthly.</p>
+                    <div class="reviewer">- Ann P.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Ladies did a wonderful job! Fast but detailed I will be scheduling recurring services.</p>
+                    <div class="reviewer">- Lacretia S.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Awesome company</p>
+                    <div class="reviewer">- Michelle H.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>She was great, on time, and did a great job, I will use her again</p>
+                    <div class="reviewer">- Parwin S.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Everything looks amazing. My apartment smells great and looks brand new again. I truly appreciate y'all's attention to detail. I will definitely be going to y'all first in the future!!</p>
+                    <div class="reviewer">- Grace D.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>There crew did an outstanding job. My wife was happy, so that's what is important.</p>
+                    <div class="reviewer">- Jere G.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Team of 2 arrived 5 minutes early. Worked consistently until everything in the house was cleaned. Already scheduled for regular service.</p>
+                    <div class="reviewer">- Laurie H.</div>
+                </div>
+                <div class="review-card hidden review-more">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>Great crew, they did great work.</p>
+                    <div class="reviewer">- Brady D.</div>
+                </div>
+            </div>
+            <div class="show-more">
+                <button class="btn btn-primary" onclick="showMoreReviews()">Show More Reviews</button>
+            </div>
+            <div class="reviews-link">
+                <a href="https://www.thumbtack.com/ok/blanchard/house-cleaning/cornelios-house-cleaning-llc/service/291179770164125845" target="_blank">View All 138+ Reviews on Thumbtack</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="section-title">Stay Connected</h2>
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Get Cleaning Tips & Special Offers</h3>
+                    <p>Subscribe to receive cleaning tips, home maintenance reminders, and exclusive discounts. Stay informed about our latest services and seasonal promotions.</p>
+                </div>
+                <div class="newsletter-form-container">
+                    <form action="https://gmail.us12.list-manage.com/subscribe/post?u=55b8a8dfdd77086d0dddbf347&amp;id=f0d21f4828&amp;f_id=003f80e3f0" method="post" id="newsletter-form" class="newsletter-form" target="_blank">
+                        <div class="form-group">
+                            <input type="email" name="EMAIL" class="newsletter-input" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+                        </div>
+                        <div id="newsletter-response" style="display: none;"></div>
+                        <!-- Honeypot field -->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_55b8a8dfdd77086d0dddbf347_f0d21f4828" tabindex="-1" value="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="container">
+            <h2 class="section-title">Service Area</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Serving Blanchard & Surrounding Areas</h3>
+                    <p><strong>Location:</strong><br>Blanchard, OK 73010<br>and surrounding areas</p>
+                    
+                    <p><strong>Phone:</strong><br><a href="tel:14053378099">(405) 337-8099</a></p>
+                    
+                    <p><strong>Hours:</strong><br>
+                    Monday - Thursday: 8:30 AM - 5:00 PM<br>
+                    Friday: 8:30 AM - 5:00 PM<br>
+                    Saturday: 10:00 AM - 2:00 PM<br>
+                    Sunday: Closed</p>
+                    
+                    <div style="margin-top: 30px;">
+                        <a href="https://www.google.com/maps/place/Cornelio's+House+Cleaning+-+Post-Construction+Cleanup,+Affordable+Move-Out+Cleaning+Services/@35.1297008,-97.9958851,10z" target="_blank" class="btn directions-btn">Get Directions</a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208113.43380499253!2d-97.9958851!3d35.1297008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41d0d46fea72af19%3A0x76f7c3b8cd76ed76!2sCornelio's%20House%20Cleaning%20-%20Post-Construction%20Cleanup%2C%20Affordable%20Move-Out%20Cleaning%20Services!5e0!3m2!1sen!2sus!4v1725753612345!5m2!1sen!2sus" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Cornelio's House Cleaning. All rights reserved.</p>
+            <p>Professional house cleaning services serving Blanchard, Oklahoma and surrounding areas for 15 years.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handler
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create mailto link with appointment details
+            const subject = encodeURIComponent('Cleaning Service Request - ' + data.service);
+            const body = encodeURIComponent(
+                `New cleaning service request:
+                
+Name: ${data.name}
+Phone: ${data.phone}
+Email: ${data.email}
+Property Type: ${data['property-type']}
+Bedrooms: ${data.bedrooms}
+Bathrooms: ${data.bathrooms}
+Service: ${data.service}
+Frequency: ${data.frequency}
+Preferred Date: ${data['preferred-date']}
+Preferred Time: ${data['preferred-time']}
+Pets: ${data.pets}
+Additional Details: ${data.message}
+
+Please contact me to confirm this appointment and provide an estimate.`
+            );
+            
+            alert('Thank you for your cleaning service request! We will contact you within 24 hours to confirm your appointment and provide an estimate. For immediate assistance, please call (405) 337-8099.');
+            
+            // Send email notification
+            window.location.href = `mailto:service@cornelioshousecleaning.com?subject=${subject}&body=${body}`;
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Show more reviews functionality
+        function showMoreReviews() {
+            const hiddenReviews = document.querySelectorAll('.review-more');
+            const button = event.target;
+            
+            if (button.textContent === 'Show More Reviews') {
+                hiddenReviews.forEach(review => {
+                    review.classList.remove('hidden');
+                });
+                button.textContent = 'Show Less Reviews';
+            } else {
+                hiddenReviews.forEach(review => {
+                    review.classList.add('hidden');
+                });
+                button.textContent = 'Show More Reviews';
+            }
+        }
+
+        // Show more gallery functionality
+        function showMoreGallery() {
+            const hiddenItems = document.querySelectorAll('#gallery7, #gallery8, #gallery9, #gallery10');
+            const button = event.target;
+            
+            if (button.textContent === 'Show More Photos') {
+                hiddenItems.forEach(item => {
+                    item.classList.remove('hidden');
+                });
+                button.textContent = 'Show Less Photos';
+            } else {
+                hiddenItems.forEach(item => {
+                    item.classList.add('hidden');
+                });
+                button.textContent = 'Show More Photos';
+            }
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Set minimum date for appointment booking (today)
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateInput = document.getElementById('preferred-date');
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            dateInput.min = tomorrow.toISOString().split('T')[0];
+        });
+
+        // Call tracking for mobile users
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                // Track phone calls for analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'phone_call', {
+                        event_category: 'engagement',
+                        event_label: 'header_phone'
+                    });
+                }
+            });
+        });
+
+        // Add loading state to appointment form
+        document.getElementById('appointmentForm').addEventListener('submit', function() {
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Scheduling...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 3000);
+        });
+    </script>
+
+    <!-- Google Analytics (replace with your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+</body>
+</html>
