@@ -14,19 +14,20 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Georgia', serif;
             line-height: 1.6;
-            color: #333;
+            background: #2c1810; /* Main dark background */
+            color: rgba(255, 255, 255, 0.85); /* Default light text color */
         }
 
         .header {
-            background: linear-gradient(135deg, #2d5aa0, #4a90e2);
+            background: linear-gradient(135deg, #2c1810, #4a2c1a);
             color: white;
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.5);
         }
 
         .header-content {
@@ -56,12 +57,14 @@
         .company-name {
             font-size: 1.8rem;
             font-weight: bold;
-            color: white;
+            color: #d4af37;
+            font-family: 'Georgia', serif;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
 
         .tagline {
             font-size: 0.9rem;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255,255,255,0.8);
             font-weight: normal;
         }
 
@@ -72,6 +75,7 @@
             border-radius: 8px;
             background: rgba(255,255,255,0.1);
             padding: 5px;
+            border: 2px solid rgba(212,175,55,0.3);
         }
 
         .contact-info {
@@ -81,21 +85,22 @@
         .phone {
             font-size: 1.4rem;
             font-weight: bold;
-            color: #ffd700;
+            color: #2c1810; /* Dark text on gold background */
             text-decoration: none;
             display: inline-block;
             padding: 12px 25px;
-            background: rgba(255,255,255,0.15);
+            background: #d4af37; /* Gold accent background */
             border-radius: 30px;
             margin-bottom: 0.5rem;
             transition: all 0.3s ease;
-            border: 2px solid rgba(255,215,0,0.3);
+            border: 2px solid #d4af37;
         }
 
         .phone:hover {
-            background: rgba(255,215,0,0.2);
+            background: #b8941f; /* Darker gold on hover */
+            color: #2c1810;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+            box-shadow: 0 5px 15px rgba(212,175,55,0.4);
         }
 
         .hours {
@@ -104,13 +109,13 @@
         }
 
         .hero {
-            background: linear-gradient(135deg, rgba(45,90,160,0.9), rgba(74,144,226,0.9)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect fill="%23e8f4fd" width="1000" height="600"/><circle fill="%23b3d9ff" cx="200" cy="150" r="80"/><circle fill="%23b3d9ff" cx="500" cy="200" r="60"/><circle fill="%23b3d9ff" cx="800" cy="120" r="70"/><rect fill="%23cce7ff" x="100" y="400" width="800" height="150" rx="20"/></svg>');
+            background: linear-gradient(135deg, rgba(44,24,16,0.9), rgba(74,44,26,0.9)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect fill="%23f5f1eb" width="1000" height="600"/><circle fill="%23e6d7c3" cx="200" cy="150" r="80"/><circle fill="%23e6d7c3" cx="500" cy="200" r="60"/><circle fill="%23e6d7c3" cx="800" cy="120" r="70"/><rect fill="%23dcc7a6" x="100" y="400" width="800" height="150" rx="20"/><path fill="%234a2c1a" d="M0,500 Q500,450 1000,500 L1000,600 L0,600 Z"/></svg>');
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 60px 20px;
             position: relative;
         }
 
@@ -121,7 +126,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(255,215,0,0.1), rgba(45,90,160,0.1));
+            background: radial-gradient(circle at 30% 70%, rgba(212,175,55,0.1), transparent 60%);
             pointer-events: none;
         }
 
@@ -132,18 +137,21 @@
 
         .hero h1 {
             font-size: 3.2rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-            color: #fff5cc;
+            margin-bottom: 1.2rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+            color: #d4af37;
+            font-family: 'Georgia', serif;
+            font-weight: bold;
         }
 
         .hero p {
             font-size: 1.3rem;
-            margin-bottom: 2rem;
-            max-width: 700px;
+            margin-bottom: 2.5rem;
+            max-width: 650px;
             margin-left: auto;
             margin-right: auto;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+            color: #f0f0f0;
         }
 
         .cta-buttons {
@@ -155,7 +163,7 @@
 
         .btn {
             display: inline-block;
-            padding: 16px 35px;
+            padding: 18px 40px;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
@@ -165,35 +173,68 @@
             font-size: 1.1rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-family: 'Arial', sans-serif;
         }
 
         .btn-primary {
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            color: #2d5aa0;
-            box-shadow: 0 4px 15px rgba(255,215,0,0.4);
+            background: #d4af37;
+            color: #2c1810;
+            box-shadow: 0 4px 15px rgba(212,175,55,0.4);
             font-weight: bold;
         }
 
         .btn-secondary {
             background: transparent;
-            color: white;
-            border: 2px solid #ffd700;
+            color: #d4af37;
+            border: 2px solid #d4af37;
+            font-weight: bold;
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(255,215,0,0.4);
+            box-shadow: 0 12px 30px rgba(212,175,55,0.4);
+        }
+
+        .btn-primary:hover {
+             background: #b8941f !important;
+             transform: translateY(-3px);
+             box-shadow: 0 12px 30px rgba(212,175,55,0.5);
         }
 
         .btn-secondary:hover {
-            background: #ffd700;
-            color: #2d5aa0;
-            font-weight: bold;
+            background: #d4af37;
+            color: #2c1810;
+            border: 2px solid #d4af37;
         }
 
         .services {
             padding: 100px 20px;
-            background: linear-gradient(135deg, #f8fafc, #e8f4fd);
+            position: relative;
+        }
+
+        .services::before {
+            content: '✨';
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            font-size: 3rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .services::after {
+            content: '🧹';
+            position: absolute;
+            bottom: 50px;
+            right: 100px;
+            font-size: 3rem;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite 3s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
         }
 
         .container {
@@ -203,32 +244,24 @@
 
         .section-title {
             text-align: center;
-            font-size: 2.8rem;
+            font-size: 3rem;
             margin-bottom: 3rem;
-            color: #2d5aa0;
+            color: #d4af37; /* Gold accent color for titles */
             position: relative;
+            font-family: 'Georgia', serif;
+            text-shadow: 1px 1px 3px rgba(212,175,55,0.3);
         }
 
         .section-title::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
+            width: 100px;
             height: 4px;
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            background: #d4af37; /* Gold accent color for underline */
             border-radius: 2px;
-        }
-
-        .newsletter .section-title,
-        .reservation-section .section-title {
-            color: white;
-        }
-
-        .newsletter .section-title::after,
-        .reservation-section .section-title::after {
-            background: linear-gradient(45deg, #fff5cc, #ffd700);
         }
 
         .services-grid {
@@ -238,43 +271,82 @@
         }
 
         .service-card {
-            background: white;
+            background: #4a2c1a; /* Lighter brown for cards */
             padding: 40px 30px;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             text-align: center;
-            transition: all 0.3s ease;
-            border-top: 4px solid #ffd700;
+            transition: all 0.4s ease;
+            border-top: 5px solid #d4af37;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(45,90,160,0.2);
-            border-top: 4px solid #2d5aa0;
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
 
         .service-icon {
-            font-size: 3.5rem;
+            font-size: 4rem;
             margin-bottom: 25px;
             display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.2) rotate(5deg);
         }
 
         .service-card h3 {
-            color: #2d5aa0;
+            color: #d4af37;
             margin-bottom: 15px;
             font-size: 1.4rem;
+            font-family: 'Georgia', serif;
         }
 
         .service-card p {
-            color: #666;
-            line-height: 1.6;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.7;
         }
 
         .reservation-section {
-            background: linear-gradient(135deg, #2d5aa0, #4a90e2);
+            background: linear-gradient(135deg, #2c1810, #4a2c1a);
             color: white;
             padding: 100px 20px;
             text-align: center;
+            position: relative;
+        }
+
+        .reservation-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(212,175,55,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(212,175,55,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(212,175,55,0.1)"/></svg>') repeat;
+            animation: sparkle 20s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-100px); }
         }
 
         .reservation-form {
@@ -284,7 +356,9 @@
             max-width: 650px;
             margin: 0 auto;
             backdrop-filter: blur(15px);
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(212,175,55,0.2);
+            position: relative;
+            z-index: 1;
         }
 
         .form-group {
@@ -297,6 +371,7 @@
             margin-bottom: 8px;
             font-weight: bold;
             color: white;
+            font-family: 'Georgia', serif;
         }
 
         .form-group input,
@@ -305,11 +380,12 @@
             width: 100%;
             padding: 15px;
             border: none;
-            border-radius: 10px;
+            border-radius: 15px;
             font-size: 1rem;
-            background: rgba(255,255,255,0.9);
+            background: rgba(255,255,255,0.95);
             transition: all 0.3s ease;
             border: 2px solid transparent;
+            color: #333;
         }
 
         .form-group input:focus,
@@ -317,14 +393,13 @@
         .form-group textarea:focus {
             outline: none;
             background: white;
-            border: 2px solid #ffd700;
+            border: 2px solid #d4af37; /* Gold focus border */
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+            box-shadow: 0 8px 20px rgba(212,175,55,0.2);
         }
 
         .gallery {
             padding: 100px 20px;
-            background: white;
         }
 
         .gallery-grid {
@@ -335,19 +410,19 @@
         }
 
         .gallery-item {
-            border-radius: 20px;
+            border-radius: 25px;
             overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transition: all 0.4s ease;
             cursor: pointer;
             position: relative;
             border: 3px solid transparent;
         }
 
         .gallery-item:hover {
-            transform: scale(1.05) rotate(1deg);
-            box-shadow: 0 15px 40px rgba(45,90,160,0.2);
-            border: 3px solid #ffd700;
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border: 3px solid #d4af37;
         }
 
         .gallery-item img {
@@ -355,16 +430,15 @@
             height: 220px;
             object-fit: cover;
             display: block;
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
         }
 
         .gallery-item:hover img {
-            transform: scale(1.1);
+            transform: scale(1.15);
         }
 
         .reviews {
             padding: 100px 20px;
-            background: linear-gradient(135deg, #f8fafc, #e8f4fd);
         }
 
         .reviews-grid {
@@ -374,37 +448,49 @@
         }
 
         .review-card {
-            background: white;
+            background: #4a2c1a; /* Lighter brown for cards */
             padding: 35px;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border-left: 4px solid #ffd700;
-            border-bottom: 2px solid #2d5aa0;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.4s ease;
+            border-left: 5px solid #d4af37;
+            position: relative;
+        }
+
+        .review-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #d4af37;
+            opacity: 0.3;
+            font-family: 'Georgia', serif;
         }
 
         .review-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(45,90,160,0.2);
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
 
         .stars {
-            color: #ffd700;
-            font-size: 1.3rem;
+            color: #d4af37;
+            font-size: 1.4rem;
             margin-bottom: 15px;
         }
 
         .reviewer {
             font-weight: bold;
-            color: #2d5aa0;
+            color: white;
             margin-top: 20px;
             font-size: 1.1rem;
+            font-family: 'Georgia', serif;
         }
 
         .review-card p {
-            color: #555;
-            line-height: 1.6;
-            font-style: italic;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.7;
+            padding-left: 20px;
         }
 
         .show-more {
@@ -414,8 +500,26 @@
 
         .newsletter {
             padding: 100px 20px;
-            background: linear-gradient(135deg, #2d5aa0, #4a90e2);
+            background: linear-gradient(135deg, #2c1810, #4a2c1a);
             color: white;
+            position: relative;
+            border-top: 1px solid rgba(212,175,55,0.3);
+            border-bottom: 1px solid rgba(212,175,55,0.3);
+        }
+
+        .newsletter::before {
+            content: '📧';
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            font-size: 4rem;
+            opacity: 0.1;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.1; }
+            50% { transform: scale(1.1); opacity: 0.2; }
         }
 
         .newsletter-content {
@@ -428,23 +532,24 @@
         }
 
         .newsletter-text h3 {
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 1.5rem;
-            color: #fff5cc;
+            color: #d4af37;
+            font-family: 'Georgia', serif;
         }
 
         .newsletter-text p {
             font-size: 1.2rem;
-            line-height: 1.7;
+            line-height: 1.8;
             opacity: 0.9;
         }
 
         .newsletter-form-container {
             background: rgba(255,255,255,0.15);
             padding: 40px;
-            border-radius: 20px;
+            border-radius: 25px;
             backdrop-filter: blur(15px);
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(212,175,55,0.2);
         }
 
         .newsletter-form .form-group {
@@ -470,14 +575,13 @@
             padding: 18px 35px;
             white-space: nowrap;
             border-radius: 50px;
-            background: linear-gradient(45deg, #ffd700, #ffed4e);
-            color: #2d5aa0;
+            background: linear-gradient(45deg, #d4af37, #b8941f);
+            color: #2c1810;
             font-weight: bold;
         }
 
         .location {
             padding: 100px 20px;
-            background: white;
         }
 
         .location-content {
@@ -488,41 +592,42 @@
         }
 
         .location-info h3 {
-            color: #2d5aa0;
+            color: #d4af37;
             font-size: 1.8rem;
             margin-bottom: 25px;
+            font-family: 'Georgia', serif;
         }
 
         .location-info p {
             margin-bottom: 20px;
-            color: #555;
-            line-height: 1.6;
+            color: rgba(255,255,255,0.85);
+            line-height: 1.7;
         }
 
         .location-info strong {
-            color: #2d5aa0;
+            color: white;
         }
 
         .location-info a {
-            color: #2d5aa0;
+            color: #d4af37;
             text-decoration: none;
             font-weight: bold;
         }
 
         .location-info a:hover {
-            color: #ffd700;
+            color: #b8941f;
             text-decoration: underline;
         }
 
         .map-container {
-            border-radius: 20px;
+            border-radius: 25px;
             overflow: hidden;
-            box-shadow: 0 15px 40px rgba(45,90,160,0.15);
-            border: 3px solid #ffd700;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            border: 3px solid #d4af37;
         }
 
         .footer {
-            background: linear-gradient(135deg, #4a90e2, #2d5aa0);
+            background: linear-gradient(135deg, #2c1810, #4a2c1a);
             color: white;
             padding: 50px 20px;
             text-align: center;
@@ -533,20 +638,20 @@
         }
 
         .directions-btn {
-            background: #ffd700 !important;
-            color: #2d5aa0 !important;
-            border: 3px solid #2d5aa0 !important;
+            background: #d4af37 !important;
+            color: #2c1810 !important;
+            border: 2px solid #d4af37 !important;
             font-weight: bold !important;
             text-shadow: none !important;
-            box-shadow: 0 4px 15px rgba(45,90,160,0.3) !important;
+            box-shadow: 0 4px 15px rgba(212,175,55,0.3) !important;
         }
 
         .directions-btn:hover {
-            background: #2d5aa0 !important;
-            color: #ffd700 !important;
-            border: 3px solid #ffd700 !important;
+            background: #b8941f !important;
+            color: #2c1810 !important;
+            border: 2px solid #b8941f !important;
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255,215,0,0.4) !important;
+            box-shadow: 0 8px 20px rgba(212,175,55,0.4) !important;
         }
 
         .square-payment {
@@ -554,53 +659,51 @@
             padding: 20px;
             background: rgba(255,255,255,0.1);
             border-radius: 15px;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(212,175,55,0.2);
         }
 
         .square-payment h4 {
-            color: #fff5cc;
+            color: #d4af37;
             margin-bottom: 15px;
             font-size: 1.2rem;
+            font-family: 'Georgia', serif;
         }
-
-        .btn-primary:hover {
-            background: linear-gradient(45deg, #ffed4e, #fffc82) !important;
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(255,215,0,0.4);
-        }
-
+        
         .reviews-link {
             text-align: center;
             margin-top: 30px;
         }
 
         .reviews-link a {
-            color: #2d5aa0;
+            color: #d4af37;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
-            padding: 10px 20px;
-            border: 2px solid #2d5aa0;
+            padding: 15px 25px;
+            border: 2px solid #d4af37;
             border-radius: 25px;
             transition: all 0.3s ease;
+            font-family: 'Georgia', serif;
         }
 
         .reviews-link a:hover {
-            background: #2d5aa0;
-            color: white;
+            background: #d4af37;
+            color: #2c1810;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212,175,55,0.3);
         }
 
        /* Responsive Design */
-@media (max-width: 768px) {
-    .hero {
-        padding: 40px 20px;
-    }
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+            }
 
-    .header-content {
-        text-align: center;
-        flex-direction: column;
-        gap: 1rem;
-    }
+            .header-content {
+                text-align: center;
+                flex-direction: column;
+                gap: 1rem;
+            }
 
             .contact-info {
                 text-align: center;
@@ -622,7 +725,7 @@
             }
 
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             .cta-buttons {
@@ -666,9 +769,13 @@
             .services-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
 
             .section-title {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
 
             .logo-image {
@@ -677,11 +784,11 @@
             }
 
             .company-name {
-                font-size: 1.3rem;
+                font-size: 1.4rem;
             }
 
             .tagline {
-                font-size: 0.75rem;
+                font-size: 0.8rem;
             }
 
             .logo {
@@ -703,8 +810,8 @@
             <div class="contact-info">
                 <a href="tel:14053378099" class="phone">📞 (405) 337-8099</a>
                 <div class="hours">
-                    Mon-Thu: 8:30 AM - 5 PM<br>
-                    Fri: 8:30 AM - 5 PM • Sat: 10 AM - 2 PM • Sun: Closed
+                    Mon-Fri: 8:30 AM - 5 PM<br>
+                    Sat: 10 AM - 2 PM • Sun: Closed
                 </div>
             </div>
         </div>
@@ -712,48 +819,48 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Blanchard's Trusted Cleaning Experts</h1>
-            <p>Professional house cleaning services, deep cleaning, move-out cleaning, and complete home care. Honest work, fair prices, and exceptional service you can depend on with 15 years of experience.</p>
+            <h1>Professional House Cleaning</h1>
+            <p>Expert cleaning services for homes and businesses in Blanchard, Oklahoma. From regular maintenance to deep cleans, we make your space sparkle.</p>
             <div class="cta-buttons">
-                <a href="#reservation" class="btn btn-primary">Schedule Cleaning</a>
+                <a href="#reservation" class="btn btn-primary">Book Your Service</a>
                 <a href="tel:14053378099" class="btn btn-secondary">Call Now</a>
             </div>
         </div>
     </section>
 
     <section class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
+         <div class="container">
+            <h2 class="section-title">Our Cleaning Services</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🏠</div>
-                    <h3>Standard House Cleaning</h3>
-                    <p>Regular home cleaning services including dusting, vacuuming, mopping, and sanitizing all living areas.</p>
+                    <h3>Regular House Cleaning</h3>
+                    <p>Consistent, reliable cleaning service to keep your home fresh and tidy. Perfect for busy families and professionals.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">✨</div>
                     <h3>Deep Cleaning</h3>
-                    <p>Comprehensive deep cleaning service including baseboards, windows, cabinets, and detailed attention to every corner.</p>
+                    <p>Comprehensive top-to-bottom cleaning that gets into every corner. Ideal for spring cleaning or first-time service.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📦</div>
                     <h3>Move-Out Cleaning</h3>
-                    <p>Professional move-out cleaning to help you get your deposit back. We clean every inch for your final inspection.</p>
+                    <p>Thorough cleaning for move-outs to help you get your security deposit back. We handle all the details.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔧</div>
                     <h3>Post-Construction Cleanup</h3>
-                    <p>Specialized cleaning after construction or renovation projects. We handle dust, debris, and detailed cleanup.</p>
+                    <p>Specialized cleaning to remove construction dust, debris, and get your newly renovated space move-in ready.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🍽️</div>
-                    <h3>Kitchen & Appliance Cleaning</h3>
-                    <p>Detailed kitchen cleaning including inside ovens, refrigerators, cabinets, and all appliance surfaces.</p>
+                    <h3>Kitchen Deep Clean</h3>
+                    <p>Complete kitchen sanitization including appliances, cabinets, and all surfaces for a spotless cooking space.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🪟</div>
-                    <h3>Window & Baseboard Cleaning</h3>
-                    <p>Interior window cleaning and detailed baseboard cleaning to make your home sparkle from top to bottom.</p>
+                    <h3>Window & Detail Work</h3>
+                    <p>Professional window cleaning and detailed work on baseboards, light fixtures, and other finishing touches.</p>
                 </div>
             </div>
         </div>
@@ -761,21 +868,21 @@
 
     <section id="reservation" class="reservation-section">
         <div class="container">
-            <h2 class="section-title">Schedule Your Cleaning</h2>
+            <h2 class="section-title">Schedule Your Cleaning Service</h2>
             <div class="reservation-form">
-                <p style="margin-bottom: 30px;">Book your house cleaning service appointment. We'll confirm your booking and provide an estimate.</p>
+                <p style="margin-bottom: 30px;">Fill out the form below and we'll contact you with a personalized quote for your cleaning needs.</p>
                 <form id="appointmentForm">
                     <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" required placeholder="(405) 555-0123">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
                     </div>
                     <div class="form-group">
                         <label for="property-type">Property Type</label>
@@ -784,13 +891,13 @@
                             <option value="apartment">Apartment</option>
                             <option value="house">House</option>
                             <option value="condo">Condo/Townhouse</option>
-                            <option value="office">Office</option>
+                            <option value="office">Office Space</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="bedrooms">Bedrooms</label>
+                        <label for="bedrooms">Number of Bedrooms</label>
                         <select id="bedrooms" name="bedrooms" required>
-                            <option value="">Number of bedrooms</option>
+                            <option value="">Select bedrooms</option>
                             <option value="1">1 Bedroom</option>
                             <option value="2">2 Bedrooms</option>
                             <option value="3">3 Bedrooms</option>
@@ -799,9 +906,9 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="bathrooms">Bathrooms</label>
+                        <label for="bathrooms">Number of Bathrooms</label>
                         <select id="bathrooms" name="bathrooms" required>
-                            <option value="">Number of bathrooms</option>
+                            <option value="">Select bathrooms</option>
                             <option value="1">1 Bathroom</option>
                             <option value="2">2 Bathrooms</option>
                             <option value="3">3 Bathrooms</option>
@@ -810,24 +917,24 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="service">Service Needed</label>
+                        <label for="service">Service Type</label>
                         <select id="service" name="service" required>
-                            <option value="">Select a service</option>
-                            <option value="standard-cleaning">Standard Cleaning</option>
+                            <option value="">Choose service type</option>
+                            <option value="standard-cleaning">Regular House Cleaning</option>
                             <option value="deep-cleaning">Deep Cleaning</option>
                             <option value="move-out-cleaning">Move-Out Cleaning</option>
                             <option value="post-construction">Post-Construction Cleanup</option>
-                            <option value="recurring">Recurring Service</option>
-                            <option value="other">Other (describe below)</option>
+                            <option value="recurring">Regular Service</option>
+                            <option value="other">Other (specify below)</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="frequency">Frequency</label>
+                        <label for="frequency">Service Frequency</label>
                         <select id="frequency" name="frequency" required>
                             <option value="">Select frequency</option>
-                            <option value="one-time">One Time</option>
+                            <option value="one-time">One-Time Service</option>
                             <option value="weekly">Weekly</option>
-                            <option value="bi-weekly">Every 2 Weeks</option>
+                            <option value="bi-weekly">Bi-Weekly</option>
                             <option value="monthly">Monthly</option>
                         </select>
                     </div>
@@ -845,28 +952,26 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="pets">Pets in Home?</label>
+                        <label for="pets">Do you have pets?</label>
                         <select id="pets" name="pets">
                             <option value="no">No pets</option>
-                            <option value="yes">Yes, pets in home</option>
+                            <option value="yes">Yes, we have pets</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="message">Additional Details</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Any special instructions, areas of focus, or additional services needed..."></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="Any special requests or areas that need extra attention?"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Schedule Cleaning</button>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Get Free Quote</button>
                 </form>
                 
                 <div class="square-payment">
-                    <h4>Secure Payment Options Available</h4>
-                    <p style="font-size: 0.9rem; opacity: 0.8;">We accept all major credit cards and digital payments for your convenience.</p>
-                    <!-- Replace YOUR_LOCATION_ID with actual Square location ID -->
-                    <div id="square-payment-form" data-location-id="YOUR_LOCATION_ID" style="display: none;"></div>
+                    <h4>Payment Options</h4>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">We accept cash, check, and all major credit cards for your convenience.</p>
                 </div>
                 
                 <p style="margin-top: 25px; font-size: 0.9rem; opacity: 0.8;">
-                    Prefer to call? <a href="tel:14053378099" style="color: #fff5cc;">Call (405) 337-8099</a> to speak with us directly.
+                    Prefer to call? <a href="tel:14053378099" style="color: #d4af37;">Reach us at (405) 337-8099</a>
                 </p>
             </div>
         </div>
@@ -874,7 +979,7 @@
 
     <section class="gallery">
         <div class="container">
-            <h2 class="section-title">Our Work & Results</h2>
+            <h2 class="section-title">Our Work Gallery</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin1.webp" alt="Professional House Cleaning" onerror="this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
@@ -908,14 +1013,14 @@
                 </div>
             </div>
             <div class="show-more">
-                <button class="btn btn-primary" onclick="showMoreGallery()">Show More Photos</button>
+                <button class="btn btn-primary" onclick="showMoreGallery()">View More Photos</button>
             </div>
         </div>
     </section>
 
     <section class="reviews">
         <div class="container">
-            <h2 class="section-title">What Our Customers Say</h2>
+            <h2 class="section-title">Customer Reviews</h2>
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
@@ -948,7 +1053,6 @@
                     <div class="reviewer">- Matt T.</div>
                 </div>
 
-                <!-- Hidden reviews -->
                 <div class="review-card hidden review-more">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
                     <p>I lost my old house cleaner due to her illness. She did a great job. But Bianca and Cornelios did a great job at a very reasonable price for our 3/2 house in Moore. Her communication was prompt and texted me the day before our appointment. Two ladies showed up on time to clean. They were friendly, trustworthy and energetic. They did a great job. The house was sparkling and smelled so good. Floors, bathroom, blinds, kitchen - everything looked great. I will be using them on a regular basis.</p>
@@ -1046,10 +1150,10 @@
                 </div>
             </div>
             <div class="show-more">
-                <button class="btn btn-primary" onclick="showMoreReviews()">Show More Reviews</button>
+                <button class="btn btn-primary" onclick="showMoreReviews()">Read More Reviews</button>
             </div>
             <div class="reviews-link">
-                <a href="https://www.thumbtack.com/ok/blanchard/house-cleaning/cornelios-house-cleaning-llc/service/291179770164125845" target="_blank">View All 138+ Reviews on Thumbtack</a>
+                <a href="https://www.thumbtack.com/ok/blanchard/house-cleaning/cornelios-house-cleaning-llc/service/291179770164125845" target="_blank">See All Reviews on Thumbtack</a>
             </div>
         </div>
     </section>
@@ -1060,16 +1164,15 @@
             <div class="newsletter-content">
                 <div class="newsletter-text">
                     <h3>Get Cleaning Tips & Special Offers</h3>
-                    <p>Subscribe to receive cleaning tips, home maintenance reminders, and exclusive discounts. Stay informed about our latest services and seasonal promotions.</p>
+                    <p>Subscribe to receive helpful cleaning tips, seasonal maintenance reminders, and exclusive discounts on our services.</p>
                 </div>
                 <div class="newsletter-form-container">
-                    <form action="https://gmail.us12.list-manage.com/subscribe/post?u=55b8a8dfdd77086d0dddbf347&amp;id=f0d21f4828&amp;f_id=003f80e3f0" method="post" id="newsletter-form" class="newsletter-form" target="_blank">
+                    <form action="https://gmail.us12.list-manage.com/subscribe/post?u=55b8a8dfdd77086d0dddbf347&id=f0d21f4828&f_id=003f80e3f0" method="post" id="newsletter-form" class="newsletter-form" target="_blank">
                         <div class="form-group">
                             <input type="email" name="EMAIL" class="newsletter-input" placeholder="Enter your email address" required>
                             <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
                         </div>
                         <div id="newsletter-response" style="display: none;"></div>
-                        <!-- Honeypot field -->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true">
                             <input type="text" name="b_55b8a8dfdd77086d0dddbf347_f0d21f4828" tabindex="-1" value="">
                         </div>
@@ -1085,13 +1188,12 @@
             <div class="location-content">
                 <div class="location-info">
                     <h3>Serving Blanchard & Surrounding Areas</h3>
-                    <p><strong>Location:</strong><br>Blanchard, OK 73010<br>and surrounding areas</p>
+                    <p><strong>Service Location:</strong><br>Blanchard, OK 73010<br>and surrounding communities</p>
                     
-                    <p><strong>Phone:</strong><br><a href="tel:14053378099">(405) 337-8099</a></p>
+                    <p><strong>Contact Us:</strong><br><a href="tel:14053378099">(405) 337-8099</a></p>
                     
-                    <p><strong>Hours:</strong><br>
-                    Monday - Thursday: 8:30 AM - 5:00 PM<br>
-                    Friday: 8:30 AM - 5:00 PM<br>
+                    <p><strong>Business Hours:</strong><br>
+                    Monday - Friday: 8:30 AM - 5:00 PM<br>
                     Saturday: 10:00 AM - 2:00 PM<br>
                     Sunday: Closed</p>
                     
@@ -1108,8 +1210,8 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Cornelio's House Cleaning. All rights reserved.</p>
-            <p>Professional house cleaning services serving Blanchard, Oklahoma and surrounding areas for 15 years.</p>
+            <p>© 2024 Cornelio's House Cleaning. Professional cleaning services you can trust.</p>
+            <p>Serving Blanchard, Oklahoma and surrounding areas since 2010.</p>
         </div>
     </footer>
 
@@ -1123,7 +1225,7 @@
             const data = Object.fromEntries(formData);
             
             // Create mailto link with appointment details
-            const subject = encodeURIComponent('Cleaning Service Request - ' + data.service);
+            const subject = encodeURIComponent('Cleaning Service Quote Request - ' + data.service);
             const body = encodeURIComponent(
                 `New cleaning service request:
                 
@@ -1140,24 +1242,20 @@ Preferred Time: ${data['preferred-time']}
 Pets: ${data.pets}
 Additional Details: ${data.message}
 
-Please contact me to confirm this appointment and provide an estimate.`
+Please contact me to discuss pricing and schedule this service.`
             );
-            
-            alert('Thank you for your cleaning service request! We will contact you within 24 hours to confirm your appointment and provide an estimate. For immediate assistance, please call (405) 337-8099.');
-            
+            alert('Thank you for your request! We\'ll contact you within 24 hours with a personalized quote. For immediate assistance, please call (405) 337-8099.');
             // Send email notification
             window.location.href = `mailto:service@cornelioshousecleaning.com?subject=${subject}&body=${body}`;
-            
             // Reset form
             this.reset();
         });
-
         // Show more reviews functionality
         function showMoreReviews() {
             const hiddenReviews = document.querySelectorAll('.review-more');
             const button = event.target;
             
-            if (button.textContent === 'Show More Reviews') {
+            if (button.textContent === 'Read More Reviews') {
                 hiddenReviews.forEach(review => {
                     review.classList.remove('hidden');
                 });
@@ -1166,7 +1264,7 @@ Please contact me to confirm this appointment and provide an estimate.`
                 hiddenReviews.forEach(review => {
                     review.classList.add('hidden');
                 });
-                button.textContent = 'Show More Reviews';
+                button.textContent = 'Read More Reviews';
             }
         }
 
@@ -1175,7 +1273,7 @@ Please contact me to confirm this appointment and provide an estimate.`
             const hiddenItems = document.querySelectorAll('#gallery7, #gallery8, #gallery9, #gallery10');
             const button = event.target;
             
-            if (button.textContent === 'Show More Photos') {
+            if (button.textContent === 'View More Photos') {
                 hiddenItems.forEach(item => {
                     item.classList.remove('hidden');
                 });
@@ -1184,7 +1282,7 @@ Please contact me to confirm this appointment and provide an estimate.`
                 hiddenItems.forEach(item => {
                     item.classList.add('hidden');
                 });
-                button.textContent = 'Show More Photos';
+                button.textContent = 'View More Photos';
             }
         }
 
@@ -1201,7 +1299,6 @@ Please contact me to confirm this appointment and provide an estimate.`
                 }
             });
         });
-
         // Set minimum date for appointment booking (today)
         document.addEventListener('DOMContentLoaded', function() {
             const dateInput = document.getElementById('preferred-date');
@@ -1228,7 +1325,7 @@ Please contact me to confirm this appointment and provide an estimate.`
         document.getElementById('appointmentForm').addEventListener('submit', function() {
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Scheduling...';
+            submitBtn.textContent = 'Sending request...';
             submitBtn.disabled = true;
             
             setTimeout(() => {
@@ -1238,7 +1335,6 @@ Please contact me to confirm this appointment and provide an estimate.`
         });
     </script>
 
-    <!-- Google Analytics (replace with your tracking ID) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
