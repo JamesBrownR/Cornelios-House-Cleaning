@@ -83,26 +83,29 @@
         }
 
       /* Phone button in header */
+/* Phone button in header */
 .phone {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #FF6B35;
+    color: #FFFFFF; /* Changed to white for better contrast */
     text-decoration: none;
     display: inline-block;
     padding: 12px 25px;
-    background: #1E90FF;
+    background: linear-gradient(135deg, #FF7E4A, #FF5A1F); /* Applied consistent orange gradient */
     border-radius: 30px;
-    border: 2px solid #1E90FF;
+    border: 2px solid #E04E1B; /* Applied consistent border */
+    box-shadow: 0 6px 20px rgba(255,107,53,0.4);
     transition: all 0.3s ease;
 }
 .phone:hover {
-    background: #187bcd;
+    background: linear-gradient(135deg, #FF8F5E, #E65C20);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255,107,53,0.5);
 }
 .phone:active,
 .phone:focus {
-    background: transparent;
-    color: #FF6B35;
-    border: 2px solid #FF6B35;
+    transform: translateY(1px);
+    box-shadow: 0 4px 15px rgba(255,107,53,0.4);
 }
 
         .hours {
@@ -585,7 +588,6 @@
     border: 2px solid #FF6B35;
 }
 
-
         .location {
             padding: 100px 20px;
             background: #f0f8ff;
@@ -644,7 +646,7 @@
             display: none;
         }
 
-      /* Directions button */
+     /* Directions button */
 .directions-btn {
     background: #1E90FF !important;
     color: #FF6B35 !important;
