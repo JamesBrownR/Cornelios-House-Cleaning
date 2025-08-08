@@ -82,26 +82,30 @@
             text-align: right;
         }
 
-        .phone {
+      /* Phone button in header */
+.phone {
     font-size: 1.4rem;
     font-weight: bold;
-    color: #000000; /* Orange text on blue background */
+    color: #FF6B35;
     text-decoration: none;
     display: inline-block;
     padding: 12px 25px;
-    background: #1E90FF; /* Blue background */
+    background: #1E90FF;
     border-radius: 30px;
     margin-bottom: 0.5rem;
     transition: all 0.3s ease;
-    border: 2px solid #0000FF;
+    border: 2px solid #1E90FF;
 }
-
-        .phone:hover {
-            background: #187bcd; /* Darker orange on hover */
-            color: #000000;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255,107,53,0.4);
-        }
+.phone:hover {
+    background: #187bcd;
+    color: #FF6B35;
+}
+.phone:active,
+.phone:focus {
+    background: transparent;
+    color: #FF6B35;
+    border: 2px solid #FF6B35;
+}
 
         .hours {
             font-size: 0.9rem;
@@ -177,13 +181,13 @@
             font-family: 'Arial', sans-serif;
         }
 
-        .btn-primary {
+       .btn-primary {
     background: #1E90FF; /* Friendly blue */
-    color: #000000; /* Orange text */
-    box-shadow: 0 4px 15px rgba(0,0,255,0.4);
+    color: #FF6B35; /* Orange text */
+    border: 2px solid #1E90FF;
+    box-shadow: 0 4px 15px rgba(30,144,255,0.4);
     font-weight: bold;
 }
-
         .btn-secondary {
             background: transparent;
             color: #00405A; /* Changed from #0000FF */
@@ -196,10 +200,17 @@
             box-shadow: 0 12px 30px rgba(0,0,0,0.2);
         }
 
-       .btn-primary:hover {
+     .btn-primary:hover {
     background: #187bcd; /* Slightly darker blue */
-    color: #FF6B35; /* Keep orange text */
+    color: #FF6B35;
     box-shadow: 0 12px 30px rgba(30,144,255,0.5);
+}
+.btn-primary:active,
+.btn-primary:focus {
+    background: transparent; /* Hollow */
+    color: #FF6B35;
+    border: 2px solid #FF6B35; /* Orange border */
+    box-shadow: none;
 }
         .btn-secondary:hover {
             background: #FF6B35; /* Orange hover */
@@ -560,14 +571,27 @@
             color: #999;
         }
 
-        .newsletter-btn {
+        /* Newsletter subscribe button */
+.newsletter-btn {
     padding: 18px 35px;
     white-space: nowrap;
     border-radius: 50px;
-    background: #1E90FF; /* Solid blue */
-    color: #000000; /* Orange text */
+    background: #1E90FF;
+    color: #FF6B35;
     font-weight: bold;
+    border: 2px solid #1E90FF;
 }
+.newsletter-btn:hover {
+    background: #187bcd;
+    color: #FF6B35;
+}
+.newsletter-btn:active,
+.newsletter-btn:focus {
+    background: transparent;
+    color: #FF6B35;
+    border: 2px solid #FF6B35;
+}
+
 
         .location {
             padding: 100px 20px;
@@ -627,22 +651,26 @@
             display: none;
         }
 
-      .directions-btn {
-    background: #1E90FF !important; /* Blue */
-    color: #000000 !important; /* Orange text */
-    border: 2px solid #0000FF !important;
+      /* Directions button */
+.directions-btn {
+    background: #1E90FF !important;
+    color: #FF6B35 !important;
+    border: 2px solid #1E90FF !important;
     font-weight: bold !important;
     text-shadow: none !important;
-    box-shadow: 0 4px 15px rgba(0,0,255,0.3) !important;
+    box-shadow: 0 4px 15px rgba(30,144,255,0.3) !important;
 }
-
-        .directions-btn:hover {
-            background: #E55A2B !important;
-            color: #000000 !important;
-            border: 2px solid #E55A2B !important;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(255,107,53,0.4) !important;
-        }
+.directions-btn:hover {
+    background: #187bcd !important;
+    color: #FF6B35 !important;
+}
+.directions-btn:active,
+.directions-btn:focus {
+    background: transparent !important;
+    color: #FF6B35 !important;
+    border: 2px solid #FF6B35 !important;
+    box-shadow: none !important;
+}
 
         .square-payment {
             margin-top: 30px;
