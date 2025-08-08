@@ -179,12 +179,13 @@
             font-family: 'Arial', sans-serif;
         }
 
-      .btn-primary {
-    background: #1E90FF; /* Blue fill */
-    color: #FF6B35; /* Orange text */
-    border: 2px solid #1E90FF;
+     .btn-primary {
+    background: linear-gradient(135deg, #FF7E4A, #FF5A1F); /* Richer orange gradient */
+    color: #111111; /* Darker black for sharper contrast */
+    box-shadow: 0 6px 20px rgba(255,107,53,0.5);
     font-weight: bold;
-    transition: all 0.3s ease;
+    border: 2px solid #E04E1B; /* Subtle border for definition */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
         .btn-secondary {
             background: transparent;
@@ -198,14 +199,10 @@
             box-shadow: 0 12px 30px rgba(0,0,0,0.2);
         }
 
-    .btn-primary:hover {
-    background: #187bcd;
-}
-.btn-primary:active,
-.btn-primary:focus {
-    background: transparent; /* Hollow like Call Now */
-    color: #FF6B35;
-    border: 2px solid #FF6B35;
+   .btn-primary:hover {
+    background: linear-gradient(135deg, #FF8F5E, #E65C20);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(255,107,53,0.6);
 }
         .btn-secondary:hover {
             background: #FF6B35; /* Orange hover */
