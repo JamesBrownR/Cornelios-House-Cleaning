@@ -567,25 +567,26 @@
         }
 
         /* Newsletter subscribe button */
-/* Newsletter subscribe button */
 .newsletter-btn {
     padding: 18px 35px;
     white-space: nowrap;
     border-radius: 50px;
-    background: #1E90FF;
-    color: #FF6B35;
+    background: linear-gradient(135deg, #FF7E4A, #FF5A1F); /* Applied consistent orange gradient */
+    color: #FFFFFF; /* Changed to white for better contrast */
     font-weight: bold;
-    border: 2px solid #1E90FF;
+    border: 2px solid #E04E1B; /* Applied consistent border */
     transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(255,107,53,0.4);
 }
 .newsletter-btn:hover {
-    background: #187bcd;
+    background: linear-gradient(135deg, #FF8F5E, #E65C20);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255,107,53,0.5);
 }
 .newsletter-btn:active,
 .newsletter-btn:focus {
-    background: transparent;
-    color: #FF6B35;
-    border: 2px solid #FF6B35;
+    transform: translateY(1px);
+    box-shadow: 0 4px 15px rgba(255,107,53,0.4);
 }
 
         .location {
