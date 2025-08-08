@@ -647,24 +647,28 @@
         }
 
      /* Directions button */
+/* Directions button */
 .directions-btn {
-    background: #1E90FF !important;
-    color: #FF6B35 !important;
-    border: 2px solid #1E90FF !important;
+    background: linear-gradient(135deg, #FF7E4A, #FF5A1F) !important; /* Applied consistent orange gradient */
+    color: #FFFFFF !important; /* Changed to white for better contrast */
+    border: 2px solid #E04E1B !important; /* Applied consistent border */
     font-weight: bold !important;
     text-shadow: none !important;
-    box-shadow: 0 4px 15px rgba(30,144,255,0.3) !important;
+    box-shadow: 0 6px 20px rgba(255,107,53,0.4) !important;
 }
 .directions-btn:hover {
-    background: #187bcd !important;
-    color: #FF6B35 !important;
+    background: linear-gradient(135deg, #FF8F5E, #E65C20) !important;
+    color: #FFFFFF !important; /* Kept text color consistent */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255,107,53,0.5) !important;
 }
 .directions-btn:active,
 .directions-btn:focus {
-    background: transparent !important;
-    color: #FF6B35 !important;
-    border: 2px solid #FF6B35 !important;
-    box-shadow: none !important;
+    background: linear-gradient(135deg, #E65C20, #FF7E4A) !important; /* Invert gradient on click */
+    color: #FFFFFF !important;
+    border: 2px solid #E04E1B !important; /* Kept border consistent */
+    box-shadow: 0 4px 15px rgba(255,107,53,0.4) !important; /* Keep a subtle shadow */
+    transform: translateY(1px);
 }
 
         .square-payment {
