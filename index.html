@@ -83,7 +83,6 @@
         }
 
       /* Phone button in header */
-/* Phone button in header */
 .phone {
     font-size: 1.4rem;
     font-weight: bold;
@@ -648,7 +647,6 @@
         }
 
      /* Directions button */
-/* Directions button */
 .directions-btn {
     background: linear-gradient(135deg, #FF7E4A, #FF5A1F) !important; /* Applied consistent orange gradient */
     color: #FFFFFF !important; /* Changed to white for better contrast */
@@ -1055,10 +1053,10 @@
                 <div class="gallery-item">
                     <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin6.webp" alt="Bedroom Cleaning" onerror="this.src='https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
                 </div>
-                <div class="gallery-item hidden" id="gallery7">
+                <div class="gallery-item">
                    <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin7.webp" alt="Move-Out Cleaning" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
                 </div>
-                <div class="gallery-item hidden" id="gallery8">
+                <div class="gallery-item">
                     <img src="https://raw.githubusercontent.com/JamesBrownR/Cornelios-House-Cleaning/main/Cornelioshousevalentin8.webp" alt="Post-Construction Cleanup" onerror="this.src='https://images.unsplash.com/photo-1609521263047-f8f205293f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
                 </div>
                 <div class="gallery-item hidden" id="gallery9">
@@ -1136,7 +1134,7 @@
                 </div>
                 <div class="review-card hidden review-more">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>They were amazing!! They cleaned my apartment so well I was able to get my deposit back!! I would 10/10 recommend.</p>
+                      <p>They were amazing!! They cleaned my apartment so well I was able to get my deposit back!! I would 10/10 recommend.</p>
                     <div class="reviewer">- Alex m.</div>
                 </div>
                 <div class="review-card hidden review-more">
@@ -1171,7 +1169,7 @@
                 </div>
                 <div class="review-card hidden review-more">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>Ladies did a wonderful job! Fast but detailed I will be scheduling recurring services.</p>
+                      <p>Ladies did a wonderful job! Fast but detailed I will be scheduling recurring services.</p>
                     <div class="reviewer">- Lacretia S.</div>
                 </div>
                 <div class="review-card hidden review-more">
@@ -1339,7 +1337,7 @@ Contact customer to discuss pricing and schedule this service.`
 
         // Show more gallery functionality
         function showMoreGallery() {
-            const hiddenItems = document.querySelectorAll('#gallery7, #gallery8, #gallery9, #gallery10');
+            const hiddenItems = document.querySelectorAll('#gallery9, #gallery10');
             const button = event.target;
             
             if (button.textContent === 'View More Photos') {
